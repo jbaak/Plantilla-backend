@@ -10,6 +10,17 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'roboto';
+	src:url('fonts/icomoon.eot?9cak61');
+	src:url('fonts/icomoon.eot?#iefix9cak61') format('embedded-opentype'),
+		url('fonts/icomoon.woff?9cak61') format('woff'),
+		url('fonts/icomoon.ttf?9cak61') format('truetype'),
+		url('fonts/icomoon.svg?9cak61#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;
@@ -151,8 +162,17 @@
 #contenido-principal{
 	position: absolute;
 	top: 0;
-	margin: 0 0 0 480px;
-	background-color: #FFFFFF
+	margin: 0 0 0 240px;
+	background-color: #FFFFFF;
+	font-family: 'Roboto';
+	overflow: hidden;
+	padding: 15px;
+	height: 100%;
+	-webkit-transition:all .3s ease-out;  /* Chrome y Safari */
+  -o-transition:all .3s ease-out;  /* Opera */
+  -moz-transition:all .3s ease-out;  /* Mozilla Firefox */
+  -ms-transition:all .3s ease-out;   /* Internet Explorer */
+  transition:all .3s ease-out;  /* W3C */
 }
 
 #menu-lateral ul , #menu-perfil ul {
@@ -178,6 +198,7 @@
 	width: 100%;
 	padding: 10px;
 	color: #D3D3D3;
+	font-family: 'Roboto', sans-serif;
 }
 #menu-lateral ul li a ,#menu-perfil ul li a{
 	display: block;
@@ -187,6 +208,7 @@
 	height: 30px;
 	padding: 20px 10px;
 	width: 220px;
+	font-family: 'Roboto', sans-serif;
 }
 #menu-lateral ul li a:hover {
 	color: #484848;
@@ -209,4 +231,63 @@
 	width: 130px;
 	margin: 0 10px;
 	float: left;
+	font-family: 'Roboto', sans-serif;
+}
+
+#content-title-nav{
+	width: 100%;
+	height: 100px;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#content-title-nav h2{
+	color: #52BAD5;
+	font-size: 35px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#cuerpo{
+
+}
+
+#cuerpo ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+#cuerpo ul li {
+	width: 100%;
+	border-top: 2px dashed gray;
+}
+#row{
+	width: 100%;
+	height: 120px;
+
+}
+
+#row .img-row,#row .text-row,#row .link-row{
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+}
+
+#row .text-row{
+	width: 60%;
+}
+
+#row .link-row{
+	display: 22%;
+}
+
+.menu-expand{
+	margin-left: 480px !important;
+	-webkit-transition:all .3s ease-out;  /* Chrome y Safari */
+  -o-transition:all .3s ease-out;  /* Opera */
+  -moz-transition:all .3s ease-out;  /* Mozilla Firefox */
+  -ms-transition:all .3s ease-out;   /* Internet Explorer */
+  transition:all .3s ease-out;  /* W3C */
 }

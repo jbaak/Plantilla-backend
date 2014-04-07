@@ -4,7 +4,10 @@
    <head>
       <meta charset="utf-8"/>   
       <title>Dashboard</title>
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="js/jquery-1.11.0.min.js"></script>
+
    </head>
 
    <body>
@@ -15,7 +18,7 @@
       <div id="menu-lateral">
          <ul>
             
-             <li> <a href=""><span class="icon-user icon"></span> <span class="text">Jesus</span></a></li>
+             <li> <a href="" id="btn-perfil"><span class="icon-user icon"></span> <span class="text">Jesus</span></a></li>
              <li>  <a href=""> <span class="icon-tag icon"></span><span class="text">Productos</span></a></li>
              <li> <a href=""><span class="icon-truck icon"></span>  <span class="text">Provedores</span></a></li>
              <li>  <a href=""><span class="icon-paperplane icon"></span><span class="text">Pedidos</span></a></li>
@@ -35,47 +38,47 @@
        <!-- termina div contenido-principal-->
        <div id="contenido-principal">
           
-          <div id="contenido">
-               <div id="header">
+          
+               <div id="content-title-nav">
                   <h2>Dashboard</h2>
                </div>
                <div id="cuerpo">
                      <ul>
-                        <li><a href="">
-                              <div class="row">
+                        <li>
+                              <div id="row">
                                  <div class="img-row"></div>
-                                 <div class="text-row">Create and send a campaign</div>
-                              </div>
-                           </a></li>
-                        <li><a href="">
-                              <div class="row">
-                                 <div class="img-row"></div>
-                                 <div class="text-row">Create and send a campaign</div>
-                              </div>
-                           </a></li>
-                        <li><a href="">
-                              <div class="row">
-                                 <div class="img-row"></div>
-                                 <div class="text-row">Create and send a campaign</div>
-                              </div>
-                           </a></li>
-                        <li><a href="">
-                              <div class="row">
-                                 <div class="img-row"></div>
-                                 <div class="text-row">Create and send a campaign</div>
-                              </div>
-                           </a></li>
-                        <li><a href="">
-                              <div class="row">
-                                 <div class="img-row"></div>
-                                 <div class="text-row">Create and send a campaign</div>
-                              </div>
-                           </a></li>
+                                 <div class="text-row">
+                                 <h3>Create and send a campaign</h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ab, ex, maxime, necessitatibus nobis aliquid similique natus odit commodi doloremque culpa omnis laudantium tempora autem voluptates quas aspernatur. Modi, ex? </p>
+                                 </div>
+                                 <div class="link-row"></div>
+                              </div>   
+                              
+                        </li>
+                        
                      </ul>
                </div>
              
-          </div>
+          
        </div>
+       <script type="text/javascript">
+       $(document).ready(function() {
+
+          $("#btn-perfil").click(function(event){
+            //alert("me apretaste");
+            event.preventDefault()
+              if ($("#contenido-principal").hasClass('menu-expand')){
+                  //alert('Si');
+                  $("#contenido-principal").removeClass("menu-expand");
+              }else{
+                //alert('No');
+                   $("#contenido-principal").addClass("menu-expand");
+              }
+
+          });
+
+        });
+       </script>
    </body>
 
  </html>

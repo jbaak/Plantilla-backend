@@ -1,0 +1,115 @@
+<!doctype html>
+ <html>
+
+   <head>
+      <meta charset="utf-8"/>   
+      <title>Produccion</title>
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="js/jquery-1.11.0.min.js"></script>
+
+   </head>
+
+   <body>
+   		<div id="logo-content-nav">   
+               logo  
+      </div>
+      
+      <div id="menu-lateral">
+         <ul>
+            
+             <li> <a href="" id="btn-perfil"><span class="icon-user icon"></span> <span class="text-perfil">Jesus</span> <span id="flecha" class="icon-arrow-right "></a></li>
+             <li>  <a href=""> <span class="icon-tag icon"></span><span class="text">Produccion</span></a></li>
+             <li> <a href=""><span class="icon-truck icon"></span>  <span class="text">Provedores</span></a></li>
+             <li>  <a href=""><span class="icon-paperplane icon"></span><span class="text">Pedidos</span></a></li>
+             <li>  <a href=""><span class="icon-banknote icon"></span><span class="text">Ventas</span></a></li>
+            
+         </ul>              
+      </div>
+      <div id="menu-perfil">
+             <ul>
+             <li><span class="mi-cuenta">Mi cuenta</span></li>
+                <li><a href="">Editar</a></li>
+                   <li><a href="">Soporte</a></li>
+                   <li><a href="">Salir</a></li>
+             </ul>
+      </div>
+
+       <!-- termina div contenido-principal-->
+       <div id="contenido-principal">
+          
+          
+               <div id="content-title-nav">
+                  <h2>Produccíon</h2>
+               </div>
+               <div id="menu-produccion">
+                  <ul>
+                    <li><a class="btn-link" href="">Agregar Lote</a></li>
+                    
+                  </ul>
+               </div>
+               
+               <div id="cuerpo-produccion">
+                    <table>
+                      <thead>
+                          <tr>
+                              <th>Fecha</th>
+                              <th>Lote</th>
+                              <th>Edad</th>
+                              <th>Cantida</th>
+                              <th>Peso promedio</th>
+                              <!-- more columns are possible -->
+                      </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Fecha</td>
+                              <td>Lote</td>
+                              <td>Edad</td>
+                              <td>Cantida</td>
+                              <td>Peso promedio</td>
+                              
+                          </tr>
+                          <tr>
+                              <td>Fecha</td>
+                              <td>Lote</td>
+                              <td>Edad</td>
+                              <td>Cantida</td>
+                              <td>Peso promedio</td>
+                              
+                          </tr>
+                          <!-- more rows are possible -->
+                      </tbody>
+                      <tfoot><!-- optional -->
+                          <tr>
+                              <td></td>
+                          </tr>
+                      </tfoot>
+                  </table>
+               </div>
+             
+          
+       </div>
+       <script type="text/javascript">
+       $(document).ready(function() {
+
+          $("#btn-perfil").click(function(event){
+            //alert("me apretaste");
+            event.preventDefault()
+              if ($("#contenido-principal").hasClass('menu-expand')){
+                  //alert('Si');
+                  $("#contenido-principal").removeClass("menu-expand");
+                  $("#flecha").removeClass("flecha-gira");
+              }else{
+                //alert('No');
+                   $("#contenido-principal").addClass("menu-expand");
+                   $("#flecha").addClass("flecha-gira");
+              }
+
+          });
+
+        });
+       </script>
+   </body>
+
+ </html>

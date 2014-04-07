@@ -18,11 +18,11 @@
       <div id="menu-lateral">
          <ul>
             
-             <li> <a href="" id="btn-perfil"><span class="icon-user icon"></span> <span class="text">Jesus</span></a></li>
-             <li>  <a href=""> <span class="icon-tag icon"></span><span class="text">Productos</span></a></li>
+             <li> <a href="" id="btn-perfil"><span class="icon-user icon"></span> <span class="text-perfil">Jesus</span> <span id="flecha" class="icon-arrow-right "></a></li>
+             <li>  <a href="produccion.html"> <span class="icon-tag icon"></span><span class="text">Produccion</span></a></li>
              <li> <a href=""><span class="icon-truck icon"></span>  <span class="text">Provedores</span></a></li>
              <li>  <a href=""><span class="icon-paperplane icon"></span><span class="text">Pedidos</span></a></li>
-             <li>  <a href=""><span class="icon-banknote icon"></span><span class="text">Gastos</span></a></li>
+             <li>  <a href=""><span class="icon-banknote icon"></span><span class="text">Ventas</span></a></li>
             
          </ul>              
       </div>
@@ -46,12 +46,40 @@
                      <ul>
                         <li>
                               <div id="row">
-                                 <div class="img-row"></div>
+                                 <div class="img-row"><img src="images/msj.png"></div>
                                  <div class="text-row">
-                                 <h3>Create and send a campaign</h3>
+                                 <h3>Lorem ipsum dolor sit amet</h3>
                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ab, ex, maxime, necessitatibus nobis aliquid similique natus odit commodi doloremque culpa omnis laudantium tempora autem voluptates quas aspernatur. Modi, ex? </p>
                                  </div>
-                                 <div class="link-row"></div>
+                                 <div class="link-row">
+                                   <a class="row-btn-link" href="">Leer mas</a>
+                                 </div>
+                              </div>   
+                              
+                        </li>
+                        <li>
+                              <div id="row">
+                                 <div class="img-row"><img src="images/money.png"></div>
+                                 <div class="text-row">
+                                 <h3>Lorem ipsum dolor sit amet</h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ab, ex, maxime, necessitatibus nobis aliquid similique natus odit commodi doloremque culpa omnis laudantium tempora autem voluptates quas aspernatur. Modi, ex? </p>
+                                 </div>
+                                 <div class="link-row">
+                                   <a class="row-btn-link" href="">Leer mas</a>
+                                 </div>
+                              </div>   
+                              
+                        </li>
+                        <li>
+                              <div id="row">
+                                 <div class="img-row"><img src="images/calendar.png"></div>
+                                 <div class="text-row">
+                                 <h3>Lorem ipsum dolor sit amet</h3>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ab, ex, maxime, necessitatibus nobis aliquid similique natus odit commodi doloremque culpa omnis laudantium tempora autem voluptates quas aspernatur. Modi, ex? </p>
+                                 </div>
+                                 <div class="link-row">
+                                   <a class="row-btn-link" href="">Leer mas</a>
+                                 </div>
                               </div>   
                               
                         </li>
@@ -70,9 +98,11 @@
               if ($("#contenido-principal").hasClass('menu-expand')){
                   //alert('Si');
                   $("#contenido-principal").removeClass("menu-expand");
+                  $("#flecha").removeClass("flecha-gira");
               }else{
                 //alert('No');
                    $("#contenido-principal").addClass("menu-expand");
+                   $("#flecha").addClass("flecha-gira");
               }
 
           });

@@ -2,30 +2,35 @@
  <html>
 
    <head>
-      <meta charset="utf-8"/>   
+      <meta charset="utf-8"/> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no">  
       <title>Dashboard</title>
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
       <script src="js/jquery-1.11.0.min.js"></script>
 
    </head>
 
    <body>
-   		<div id="logo-content-nav">   
-               logo  
-      </div>
-      
-      <div id="menu-lateral">
-         <ul>
-            
-             <li> <a href="" id="btn-perfil"><span class="icon-user icon"></span> <span class="text-perfil">Jesus</span> <span id="flecha" class="icon-arrow-right "></a></li>
-             <li>  <a href="produccion.html"> <span class="icon-tag icon"></span><span class="text">Produccion</span></a></li>
-             <li> <a href=""><span class="icon-truck icon"></span>  <span class="text">Provedores</span></a></li>
-             <li>  <a href=""><span class="icon-paperplane icon"></span><span class="text">Pedidos</span></a></li>
-             <li>  <a href=""><span class="icon-banknote icon"></span><span class="text">Ventas</span></a></li>
-            
-         </ul>              
-      </div>
+      <div id="sidebar">
+     		<div id="logo-content-nav">   
+                 logo  
+        </div>
+        
+        <div id="menu-lateral">
+           <ul>
+              
+               <li> <a href="" id="btn-perfil"><span class="icon-user icon"></span> <span class="text-perfil">Jesus</span> <span id="flecha" class="icon-arrow-right "></a></li>
+               <li>  <a href="produccion.html"> <span class="icon-tag icon"></span><span class="text">Produccion</span></a></li>
+               <li> <a href=""><span class="icon-truck icon"></span>  <span class="text">Provedores</span></a></li>
+               <li>  <a href=""><span class="icon-paperplane icon"></span><span class="text">Pedidos</span></a></li>
+               <li>  <a href=""><span class="icon-banknote icon"></span><span class="text">Ventas</span></a></li>
+              
+           </ul>              
+        </div>
+      </div><!-- termina sidebar-->
+
       <div id="menu-perfil">
              <ul>
              <li><span class="mi-cuenta">Mi cuenta</span></li>
@@ -33,12 +38,12 @@
                    <li><a href="">Soporte</a></li>
                    <li><a href="">Salir</a></li>
              </ul>
-      </div>
+      </div><!-- termina menu-principal-->
 
        <!-- termina div contenido-principal-->
        <div id="contenido-principal">
           
-          
+          <div id="wrap-cuerpo">
                <div id="content-title-nav">
                   <h2>Dashboard</h2>
                </div>
@@ -87,21 +92,25 @@
                      </ul>
                </div>
              
-          
-       </div>
+           </div><!-- termina wrap-cuerpo-->
+       </div> <!-- termina contenifo principal-->
+   
        <script type="text/javascript">
        $(document).ready(function() {
 
           $("#btn-perfil").click(function(event){
             //alert("me apretaste");
             event.preventDefault()
-              if ($("#contenido-principal").hasClass('menu-expand')){
+
+              if ($("#wrap-cuerpo").hasClass('menu-expand')){
                   //alert('Si');
-                  $("#contenido-principal").removeClass("menu-expand");
+                  //$("#menu-perfil").css("display","none");
+                  $("#wrap-cuerpo").removeClass("menu-expand");
                   $("#flecha").removeClass("flecha-gira");
               }else{
                 //alert('No');
-                   $("#contenido-principal").addClass("menu-expand");
+                    //$("#menu-perfil").css("display","block");
+                   $("#wrap-cuerpo").addClass("menu-expand");
                    $("#flecha").addClass("flecha-gira");
               }
 

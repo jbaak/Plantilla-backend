@@ -312,11 +312,16 @@
 	font-weight: bold;
 }
 
- #cuerpo table tbody tr td{
+ #cuerpo table tbody tr td, #cuerpo table tfoot tr td{
 	padding: 10px !important;
 	color: #484848;
 	border-bottom: 1px solid #89C4F4;
 
+}
+
+#cuerpo table tfoot tr td{
+	border: none;
+	text-align: center;
 }
 /*Estilos tabla */
 #cuerpo table thead tr td{
@@ -339,4 +344,96 @@
 #menu-produccion ul li{
 	float: left;
 	width: 30%;
+}
+
+/* colors*/
+.action{
+	
+	font-size: 22px;
+	padding: 5px;
+	text-decoration: none;
+}
+.red{
+	color: #E26A6A;
+}
+
+.red:hover{
+	color: #E08283;
+}
+
+.green{
+	color: #65C6BB;
+}
+
+.green:hover{
+	color: #86E2D5;
+}
+
+.orange{
+	color: #F27935;
+}
+
+.orange:hover{
+	color: #F4B350;
+}
+
+/* formularios*/
+#content-form{
+	width: 60%;
+	margin: 30px auto;
+}
+
+#form-basic input{
+	border: 2px solid #c8c8c8;
+	min-height: 36px;
+	background-color: #FFFFFF;
+	width: 100%;
+	border-radius: 3px;
+	font-family: 'Roboto';
+}
+
+#form-basic input:hover{
+	border: 2px solid #737373;
+}
+
+#form-basic input:focus{
+	border: 2px solid #52BAD5;
+}
+#form-basic label{
+	color: #595959;
+	display: block;
+	font-weight: 500;
+	padding: .4em;
+	font-family: 'Roboto';
+}
+
+.btn-basic{
+	background-color: #737373;
+	color: #FFFFFF;
+	padding: 10px;
+	margin: 20px 0 0 0 ;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #737373;
+	box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.133) inset;
+	font-family: 'Roboto';
+}
+
+.btn-basic:hover{
+	background-color: #D3D3D3;
+	border: none;
+	color: #484848;
+}
+
+/* estilo datepicker */
+/*La cabecera*/
+.ui-datepicker .ui-datepicker-header
+{
+	background-color: #6BB9F0 !important;
+	color: white;
+	border-bottom: 3px solid #5C97BF;
+}
+
+#fecha{
+	width: 140px !important;
 }
